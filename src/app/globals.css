@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  /* Default to dark mode colors (Nebula Tech) */
+  --background: #0A0A0F;
+  --foreground: #fafafa;
+  --card: #121217;
+  --card-foreground: #fafafa;
+  --popover: #121217;
+  --popover-foreground: #fafafa;
+  --primary: #A89ACD;
+  --primary-foreground: #0A0A0F;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --accent: #00DDFF;
+  --accent-foreground: #0A0A0F;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fafafa;
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #00DDFF;
+  --radius: 0.5rem;
+  --chart-1: #A89ACD;
+  --chart-2: #00DDFF;
+  --chart-3: #2563eb;
+  --chart-4: #db2777;
+  --chart-5: #e11d48;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #09090b;
+    --card: #ffffff;
+    --card-foreground: #09090b;
+    --popover: #ffffff;
+    --popover-foreground: #09090b;
+    --primary: #18181b;
+    --primary-foreground: #fafafa;
+    --secondary: #f4f4f5;
+    --secondary-foreground: #18181b;
+    --muted: #f4f4f5;
+    --muted-foreground: #71717a;
+    --accent: #f4f4f5;
+    --accent-foreground: #18181b;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #e4e4e7;
+    --input: #e4e4e7;
+    --ring: #18181b;
+    --chart-1: #e76e50;
+    --chart-2: #2a9d8f;
+    --chart-3: #264653;
+    --chart-4: #e9c46a;
+    --chart-5: #f4a261;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
